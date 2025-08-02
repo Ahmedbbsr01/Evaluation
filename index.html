@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IdealHub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h1> IdealHub<h1>
+        
+    <!-- Auth section -->
+    <div id="auth">
+        <input id ="email" placeholder="Email">
+        <input id ="password" placeholder="Password">
+        <button id ="signup">Sign Up</button>
+        <button id ="login">Login</button>
+        <button id ="logout" style="display: none;">Logout</button>
+    </div>
+
+    <!-- Idea form --> 
+    <div id="idea form" style="display:none;">
+        <input id ="title" placeholder="Idea Title">
+        <textarea id ="decription" placeholder="Idea Description"></textarea>
+        <button id ="submit">Post Idea</button>
+    </div>    
+
+    <!-- Idea feed -->   
+    <div id="idea-feed"></div>  
+
+    <script type="module" src="firebase.js"></script>    
+    <script type="module" src="app.js"></script>     
 </body>
-<script src="Test.js"></script>
 </html>
