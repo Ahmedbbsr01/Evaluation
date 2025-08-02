@@ -3,7 +3,7 @@ import{
     signInWithEmailAndPassword,
     signOut,
     onAuthStageChanged
-} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"
+} from 
 
 const email= document.getElementById("email");
 const password= document.getElementById("password");
