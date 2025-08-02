@@ -1,16 +1,15 @@
-function compressedString (str){
-    let result= " ";
-    let count= 1;
-    for (let i=1; i<=str.length;i++){
-        if (str[i] === str[i-1]){
-            count++;
-        }else {
-        result = result + str[i-1] + count;
-        count=1;
-        }
-    }
-    return result.length < str.length ? result : str;
-}
-let a = "aabcccccaaa";
-let b = compressedString(a);
-console.log(b)
+import{
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut,
+    onAuthStageChanged
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"
+
+const email= document.getElementById("email");
+const password= document.getElementById("password");
+const signup= document.getElementById("signup");
+const login= document.getElementById("login");
+const logout= document.getElementById("logout");
+const ideaform= document.getElementById("ideaform");
+const submit= document.getElementById("submit");
+const feed= document.getElementById("feed");
